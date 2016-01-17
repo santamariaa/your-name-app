@@ -1,0 +1,16 @@
+<h1> Enter number here to guess if it's too high or too low</h1>
+
+<%= form_tag '/submit_numbers', method: :post do%>
+    <div>
+        <%= label_tag :message %>
+        <%= text_field_tag :message %>
+    </div>
+
+    <div>
+        <%= submit_tag 'Send message' %>
+
+
+    </div>
+
+
+<% end %>
